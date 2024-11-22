@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/croping.css">
+    <title>Croping</title>
+</head>
+<body>
+    <header>
+        <h1>MYLOGO.COM</h1>
+        <div class="nav">
+            <a href="../index.html">
+                <button class="btn">
+                    <b>Portfolio</b>
+                </button>
+            </a>
+            <a href="croping.html">
+                <button class="btn active">
+                    <b>Photo cropping</b>
+                </button>
+            </a>
+            <a href="zoom.html">
+                <button class="btn">
+                    <b>Magnifying image</b>
+                </button>
+            </a>
+        </div>        
+    </header>
+
+    <hr>
+
+    <h1>Compare Two Images</h1>
+
+    <p>Click and slide the blue slider to compare two images:</p>
+
+    <div class="img-comp-container" id="imgContainer">
+        <div class="img-comp-img" id="backImg">
+            <img src="../images/animals_crop.png" width="1080" height="auto">
+        </div>
+        <div class="img-comp-img img-comp-overlay" id="overlayImg">
+            <img src="../images/animals.jpg" width="1080" height="auto">
+        </div>
+    </div>
+    <script src="../scripts/croping.js"></script>
+</body>
+</html>

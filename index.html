@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Портфолио фотографа</title>
+</head>
+<body>
+    <div class="main">
+
+        <h1>MYLOGO.COM</h1>
+        <div class="nav">
+          <a href="index.html">
+            <button class="btn active">
+                <b>Portfolio</b>
+            </button>
+          </a>
+          <a href="pages/croping.html">
+              <button class="btn">
+                  <b>Photo cropping</b>
+              </button>
+          </a>
+          <a href="pages/magnitifyng.html">
+              <button class="btn">
+                  <b>Magnifying image</b>
+              </button>
+          </a>
+        </div>
+        <hr>
+        
+        <h2>PORTFOLIO</h2>
+        
+        <div id="myBtnContainer">
+          <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+          <button class="btn" onclick="filterSelection('nature')"> Nature</button>
+          <button class="btn" onclick="filterSelection('gallery')"> Cars</button>
+          <button class="btn" onclick="filterSelection('people')"> People</button>
+        </div>
+        
+        <!-- Portfolio Gallery Grid -->
+        <div class="row">
+          <div class="column nature">
+            <div class="content">
+              <img src="images/mounted.jpg" alt="Mountains" style="width:100%">
+              <h4>Mountains</h4>
+              <p>Lorem ipsum dolor..</p>
+            </div>
+          </div>
+          <div class="column nature">
+            <div class="content">
+            <img src="images/sea.jpg" alt="Sea" style="width:100%">
+              <h4>Sea</h4>
+              <p>Lorem ipsum dolor..</p>
+            </div>
+          </div>
+          <div class="column gallery">
+            <div class="content">
+            <img src="images/galery_1.jpg" alt="Gallery" style="width:100%">
+              <h4>Gallery</h4>
+              <p>Lorem ipsum dolor..</p>
+            </div>
+          </div>
+          
+          <div class="column gallery">
+            <div class="content">
+              <img src="images/galery_2.jpg" alt="Gallery" style="width:100%">
+              <h4>Gallery</h4>
+              <p>Lorem ipsum dolor..</p>
+            </div>
+          </div>
+          <div class="column people">
+            <div class="content">
+            <img src="images/people_1.jpg" alt="Woman" style="width:100%">
+              <h4>Woman</h4>
+              <p>Lorem ipsum dolor..</p>
+            </div>
+          </div>
+          <div class="column people">
+            <div class="content">
+            <img src="images/people_2.jpg" alt="Woman" style="width:100%">
+              <h4>Woman</h4>
+              <p>Lorem ipsum dolor..</p>
+            </div>
+          </div>
+        <!-- END GRID -->
+        </div>
+        
+        <!-- END MAIN -->
+    </div>
+    <script src="scripts/main.js"></script>
+</body>
+</html>
